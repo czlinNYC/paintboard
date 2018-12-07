@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+		<link rel="shortcut icon" href="paint.ico"/>
+<script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Sarah's Drawing Board</title>
+	<link rel="stylesheet" type="text/css" href="main.css"> 
+</head>
+
+<body>
+	<div id="mainBody">
+		<canvas id="whiteBoard" height="661" width="1152"></canvas>
+		<div id="topRow"> 
+			<div class="box" id="sprayBox">
+				<span id="emoji">Emoji Spray:</span>
+				<div id="emojiBox">
+					<img id="jason" data-src="jason" src="jason.png">
+					<img id="creeper" data-src="creeper" src="creeper.png">
+					<img id="skull" data-src="skull" src="skull.png">
+				</div>
+			</div>
+			<div id="backBox"> <span id="backLabel">Backgrounds:</span>
+				<img id="cats" data-back="cats" src="cats.jpg">
+				<img id="ny" data-back="ny" src="ny.jpg">
+				<img id="flowers" data-back="flowers" src="flowers.jpg">
+				<div class="back" id="backTag" data-back="">No Background</div>
+			</div>
+			<div></div>
+		</div>
+		<div id="leftCol">
+
+			<div class="box" id="colorBox">
+				<center>
+					<div class="tools" id="blue" data-color="#00ADF3">blue</div>
+					<div class="tools" id="green" data-color="#A1F186">green</div>
+					<div class="tools" id="yellow" data-color="#F7E36D">yellow</div>
+					<div class="tools" id="black" data-color="black">black</div>
+				</center>
+			</div>
+			
+			<div class="box" id="sizeBox">
+					<center>
+						<span id="brushTag">Brush Size:</span>
+						<div class="tools" data-size="5" id="smallBrush"></div>
+						<div class="tools" data-size="15" id="medBrush"></div>
+						<div class="tools" data-size="30" id="bigBrush"></div>
+					</center>
+				
+			</div>
+			<div class="box" id="toolBox">
+				<center>
+					<span class="tools tools2">Tools:</span>
+					<div class="tools tools2" data-tool="marker">marker</div>
+					<div class="tools tools2" data-tool="eraser">eraser</div>
+					<div class="tools tools2" data-tool="line">line</div>
+				</center>
+			</div>
+			<div class="box" id="shapeBox">
+				<center id="shapeBox2">
+					<span id="shapeTag">shapes:</span>
+					<img src="triangle.png" class="tools shapes" data-shape="triangle">
+					<img src="square.png" class="tools shapes" data-shape="square">
+					<img src="circle.png" class="tools shapes" data-shape="circle">
+				</center>
+			</div>
+			<center>
+				<div class="box" id="clearBox">
+					<span id="clearTag" data-action="clear">CLEAR</span>
+				
+				<div class="time" >
+					<span data-action="undo" class="time">Undo</span>
+					<span data-action="redo" class="time">Redo</span>
+				</div>
+			</div>
+			</center>
+			<div class="box"></div>
+		</div>
+	</div>
+	
+	<script src="canvas.js" type="text/javascript"></script>
+</body>
+</html>

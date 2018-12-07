@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+/* reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: font;
+    color: #00ADF3;
+}
+/* embedding font */
+@font-face {
+    font-family: font;
+    src: url('./font.ttf');
+}
+/* maximizing viewport */
+body {
+    height: 100vh;
+    width: 100vw;
+}
+/* setting up grid */
+#mainBody {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 80% 20%;
+    height: 100vh;
+    width: 100vw;
+}
+#leftCol {
+    grid-column: 2;
+    height:  100vh;
+    width: 20vw; 
+    display: flex;
+    flex-direction: column;
+    background-color: #494A4B;
+}
+#topRow {
+    display: flex;
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #494A4B;
+    height: 20vh;
+    width: 80vw;
+}
+#whiteboard {
+    grid-row: 1;
+    grid-column: 1;
+}
+.box {
+    flex: 1;
+}
+.back {
+    overflow: hidden;
+}
+#flowers {
+    position: relative;
+    margin-top: 40px;
+    max-height: 70px;
+    max-width:100px;
+    overflow: hidden;
+    left: 90px;
+}
+#cats{
+    position: relative;
+    margin-top: 40px;
+    max-height:100px;
+    max-width:100px;
+    overflow: hidden;
+    left: 90px;
+}
+#ny{
+    position: relative;
+    margin-top: 40px;
+    max-height:100px;
+    max-width:100px;
+    overflow: hidden;
+    left: 90px;
+}
+#blue {
+    color: #00ADF3;
+}
+#green {
+    color: #A1F186;
+}
+#yellow {
+    color : #F7E36D;
+}
+#black {
+    color: black;
+}
+#clearBox {
+    color: rgb(255,103,83);
+    margin-top: 100px;  
+}
+#clearTag {
+    color: rgb(255,103,83);
+}
+.time {
+    margin-top: 50px;
+}
+#sprayBox {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+#backBox {
+    flex: 2;
+}
+#backLabel{
+    position: absolute;
+}
+#emoji{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+#emojiBox{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#colorBox {
+    margin-top: 25px;
+}
+#backTag {
+    position: relative;
+    left: 75px;
+    color: rgb(255,103,83);
+}
+#smallBrush{
+    border-radius: 5px 5px 5px 5px;
+    background-color: black;
+    height: 5px;
+    width: 5px;
+    margin-top: 15px;
+    border: solid 2px  rgb(255,103,83);
+}
+#medBrush{
+    border-radius: 15px 15px 15px 15px;
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    margin-top: 15px;
+    border: solid 2px rgb(255,103,83);
+}
+#bigBrush{
+    border-radius: 30px 30px 30px 30px;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    border: solid 2px  rgb(255,103,83);
+}
+#sizeBox {
+    margin-top: 25px;
+}
+#brushTag {
+    margin-top: 50px;
+}
+.shapes{
+    margin-top: 15px;
+    max-width: 30px;
+    max-height: 30px;
+}
+#shapeBox {
+    margin-top: 25px;
+    display:  flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+#shapeBox2 {
+    display:  flex;
+    flex-direction: column;
+}
+.tools2 {
+    margin-top: 10px;
+}
+#toolBox {
+    margin-top: 25px;
+}
